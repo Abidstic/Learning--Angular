@@ -4,18 +4,18 @@ import {CourseService} from "./course.service";
 @Component({
   selector: 'courses',
   template: `<!--<h2>{{getTitle()}}</h2>-->
-  <!--    <ul>-->
-  <!--      <li *ngFor="let course of courses">-->
-  <!--        {{course}}-->
-  <!--      </li>-->
-  <!--    </ul>-->
-  <!--    <img src="{{imageUrl}}"/>&lt;!&ndash;  interpolation&ndash;&gt;-->
-  <!--    <img [src]="imageUrl"/> &lt;!&ndash; property binding&ndash;&gt;-->
-  <!--    <table>-->
-  <!--      <tr>-->
-  <!--        <td [attr.colspan]="colSpan"></td>-->
-  <!--      </tr>-->
-  <!--    </table>-->
+<!--      <ul>-->
+<!--        <li *ngFor="let course of courses">-->
+<!--          {{course}}-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <img src="{{imageUrl}}"/>&lt;!&ndash;  interpolation&ndash;&gt;-->
+<!--      <img [src]="imageUrl"/> &lt;!&ndash; property binding&ndash;&gt;-->
+<!--      <table>-->
+<!--        <tr>-->
+<!--          <td [attr.colspan]="colSpan"></td>-->
+<!--        </tr>-->
+<!--      </table>-->
 <!--  <button (click)="onSave($event)" class="btn btn-dark" [style.backgroundColor]="isActive? 'blue' : 'red'">Save</button>-->
 <!--  <br/>-->
 <!--  {{info.name | uppercase }}<br/>-->
@@ -23,7 +23,7 @@ import {CourseService} from "./course.service";
 <!--  {{info.rating | number :'1.2-10'}}<br/>-->
 <!--  {{info.salary | currency:'BDT' : true :'3.1-1'}}<br/>-->
 <!--  {{info.birthDate | date:'longDate'}}<br/>-->
-<!--  {{text|summary : 25}}-->
+<!--&lt;!&ndash;  {{text|summary : 25}}&ndash;&gt;-->
   `
 })
 export class CourseComponent {

@@ -6,11 +6,12 @@ import { CoursesComponent } from './courses/courses.component';
 import {CourseComponent} from "./course.component";
 import {CourseService} from "./course.service";
 import {SummaryPipe} from "./summary.pipe";
-import { ServerComponent } from './server/server.component';
+import {ServerComponent } from './server/server.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import {SuccessAlertComponent} from "./success-alert/success-alert.component";
+import { ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {SuccessAlertComponent} from "./success-alert/success-alert.component";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     CourseService
