@@ -3,25 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
-import {CourseComponent} from "./course.component";
-import {CourseService} from "./course.service";
-import {SummaryPipe} from "./summary.pipe";
+// import {CourseComponent} from "./course.component";
+// import {CourseService} from "./course.service";
+// import {SummaryPipe} from "./summary.pipe";
 import {ServerComponent } from './server/server.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import {SuccessAlertComponent} from "./success-alert/success-alert.component";
 import { ReactiveFormsModule} from "@angular/forms";
+import {HeaderComponent} from "./header/header.component";
+import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
-    CourseComponent,
-    SummaryPipe,
+    // CourseComponent,
+    // SummaryPipe,
     ServerComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    HeaderComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ import { ReactiveFormsModule} from "@angular/forms";
     ReactiveFormsModule
   ],
   providers: [
-    CourseService
+    // CourseService
   ],
   bootstrap: [AppComponent]
 })

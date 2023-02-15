@@ -1,7 +1,7 @@
-
-export class CourseService{
-getCourses() {
-  return ["Cse", "Swe", "Eee"];
-}
-
-}
+//
+// export class CourseService{
+// getCourses() {
+//   return ["Cse", "Swe", "Eee"];
+// }
+//
+// }

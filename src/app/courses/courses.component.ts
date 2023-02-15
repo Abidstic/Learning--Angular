@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {EmailService} from "../email.service";
+// import {EmailService} from "../email.service";
 
 @Component({
   selector: 'app-courses',
