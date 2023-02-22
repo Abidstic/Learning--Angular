@@ -14,6 +14,9 @@ import {SuccessAlertComponent} from "./success-alert/success-alert.component";
 import { ReactiveFormsModule} from "@angular/forms";
 import {HeaderComponent} from "./header/header.component";
 import { RecipeComponent } from './recipe/recipe.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { RecipeComponent } from './recipe/recipe.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     HeaderComponent,
-    RecipeComponent
+    RecipeComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
