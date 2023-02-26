@@ -16,14 +16,16 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
-<div class="row">
-  <div class="col-xs-12">
-    <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <app-odd *ngFor="let i of oddNumber" [number]="i"></app-odd>
-    <app-even *ngFor="let i of evenNumber" [number]="i"></app-even>
-  </div>
-</div>
+<!--<div class="row">-->
+<!--  <div class="col-xs-12">-->
+<!--    <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--  <div class="col-xs-12">-->
+<!--    <app-odd *ngFor="let i of oddNumber" [number]="i"></app-odd>-->
+<!--    <app-even *ngFor="let i of evenNumber" [number]="i"></app-even>-->
+<!--  </div>-->
+<!--</div>-->
+<app-directive></app-directive>
+<p appBasicHightlight>Styling</p>
