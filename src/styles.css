@@ -4,6 +4,8 @@
  body{
    padding: 50px;
    text-align: center;
+   font-weight: revert;
+   font-size: 20px;
 
  }
  h1{
