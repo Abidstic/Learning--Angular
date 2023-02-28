@@ -12,6 +12,8 @@ export class NewAccountComponent {
 
   constructor(private loggingService:LoggingService,private accountService:AccountService) {
     this.accountService.statusChanged.subscribe((status:string)=>alert('New Status'+ status));
+    this.accountService.accountAdded.subscribe((account:{name:string,status:string})=>
+      alert('New Account name is :  '+account.name+' status: '+account.status));
   }
 
   onCreateAccount(accountName: string, accountStatus: string) {
