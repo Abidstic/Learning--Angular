@@ -25,7 +25,28 @@ import { AccountComponent } from './account/account.component';
 import { NewAccountComponent } from './new-account/new-account.component';
 import {AccountService} from "./account.service";
 import {LoggingService} from "./logging.service";
+import { HomeComponent } from './home/home.component';
+import { ServersComponent } from './servers/servers.component';
+import { UsersComponent } from './users/users.component';
+import {RouterModule, Routes} from '@angular/router';
+import { EditServerComponent } from './servers/edit-server/edit-server.component';
+import { UserComponent } from './users/user/user.component';
+import { Server1Component } from './servers/server1/server1.component';
+import {ServersService} from "./servers/servers.service";
 
+
+const routes: Routes=[
+  {
+    path:'', component:HomeComponent
+  } ,
+  {
+    path:'users', component:UsersComponent
+  } ,
+  {
+    path:'servers', component:ServersComponent
+  }
+
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,18 +66,27 @@ import {LoggingService} from "./logging.service";
     BetterHighlightDirective,
     UnlessDirective,
     AccountComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    HomeComponent,
+    ServersComponent,
+    UsersComponent,
+    EditServerComponent,
+    UserComponent,
+    ServerComponent,
+    Server1Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     // CourseService
     AccountService,
-    LoggingService
+    LoggingService,
+    ServersService
   ],
   bootstrap: [AppComponent]
 })

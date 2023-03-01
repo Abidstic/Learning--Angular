@@ -3,7 +3,7 @@ import {Component} from "@angular/core";
 @Component({
   selector: 'app-success-alert',
   template: `
-    <h3>Success {{name}}.Your {{'server'}} is {{getSuccessPort()}}</h3>`,
+    <h3>Success {{name}}.Your {{'server1'}} is {{getSuccessPort()}}</h3>`,
   styles: [
       `h3 {
       padding: 20px;

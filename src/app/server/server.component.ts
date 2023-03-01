@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ServerComponent {
   allowedNewServer: boolean= false;
-  serverCreationStatus:string='No server was created';
+  serverCreationStatus:string='No server1 was created';
   ServerName='';
   nullValue= false;
   // constructor() {
